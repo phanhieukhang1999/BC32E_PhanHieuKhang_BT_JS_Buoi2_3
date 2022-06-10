@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="card">
+        <!-- Nav pills -->
+        <ul class="nav nav-pills justify-content-center mb-4">
+          <li class="nav-item mb-2">
+            <a class="nav-link active" data-toggle="pill" href="#bai1">Bài 1</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" data-toggle="pill" href="#bai2">Bài 2</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" data-toggle="pill" href="#bai3">Bài 3</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" data-toggle="pill" href="#bai4">Bài 4</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" data-toggle="pill" href="#bai5">Bài 5</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="bai1">
+            <h3>Tính tiền lương nhân viên</h3>
+            <div class="card-detail">
+              <b>Gợi ý:</b>
+              <p>
+                Công thức: Lương = Lương ngày * Số ngày làm
+                <br />
+                Kiến thức áp dụng:
+              </p>
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+              </ul>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="nhapSoLuong"
+                  placeholder="Lương 1 ngày"
+                />
+              </div>
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="soNgayLam"
+                  placeholder="Số ngày làm"
+                />
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" id="btnTinhLuong">
+                  Tính lương
+                </button>
+              </div>
+            </div>
+            <div class="alert alert-success mt-2">
+              Kết quả là =>
+              <span id="ketQua1"></span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bai2">
+            <h3>Tính giá trị trung bình</h3>
+            <div class="card-detail">
+              <b>Gợi ý:</b>
+              <p>Kiến thức áp dụng:</p>
+              <ul>
+                <li>Tìm tới thẻ và lấy giá trị</li>
+                <li>Tạo hàm cơ bản</li>
+                <li>Gắn sự kiện click cho button</li>
+                <li>Thay đổi nội dung cho thẻ</li>
+                <li>Xử lý load trang với button của form</li>
+                <li>Xử lý ép kiểu dữ liệu</li>
+              </ul>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="soThu1"
+                  placeholder="Nhập số thứ 1"
+                />
+              </div>
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="soThu2"
+                  placeholder="Nhập số thứ 2"
+                />
+              </div>
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="soThu3"
+                  placeholder="Nhập số thứ 3"
+                />
+              </div>
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="soThu4"
+                  placeholder="Nhập số thứ 4"
+                />
+              </div>
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="soThu5"
+                  placeholder="Nhập số thứ 5"
+                />
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" id="btnTinhTB">
+                  Tính trung bình
+                </button>
+              </div>
+            </div>
+            <div class="alert alert-success mt-2">
+              Kết quả là =>
+              <span id="ketQua2"></span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bai3">
+            <h3>Quy đổi tiền</h3>
+            <div class="card-detail">
+              <b>Gợi ý:</b>
+              <p>Kiến thức áp dụng:</p>
+              <ul>
+                <li>Áp dụng kiến thức bài 1, 2</li>
+                <li>Giá 1 USD = 23500</li>
+              </ul>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="nhapSoTien"
+                  placeholder="Nhập số tiền"
+                />
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary" id="btnQuyDoiTien">
+                  Quy đổi tiền
+                </button>
+              </div>
+            </div>
+            <div class="alert alert-success mt-2">
+              Kết quả là =>
+              <span id="ketQua3"></span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bai4">
+            <h3>Tính diện tích, chu vi hình chữ nhật</h3>
+            <div class="card-detail">
+              <b>Gợi ý:</b>
+              <p>Kiến thức áp dụng:</p>
+              <ul>
+                <li>Áp dụng các kiến thức như các bài trước</li>
+                <li>Diện tích: dài x rộng</li>
+                <li>Chu vi: (dài + rộng) * 2</li>
+              </ul>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="nhapChieuDai"
+                  placeholder="Nhập chiều dài"
+                />
+              </div>
+              <div class="col-12 col-lg-4 mb-2">
+                <input
+                  class="form-control"
+                  id="nhapChieuRong"
+                  placeholder="Nhập chiều rộng"
+                />
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" id="btnTinh">Tính</button>
+              </div>
+            </div>
+            <div class="alert alert-success mt-2">
+              Kết quả là =>
+              <span id="ketQua4"></span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bai5">
+            <h3>Tính tổng 2 ký số</h3>
+            <div class="card-detail">
+              <b>Gợi ý:</b>
+              <p>Kiến thức áp dụng:</p>
+              <ul>
+                <li>Áp dụng cách tính như demo tổng 3 ký số trên lớp</li>
+              </ul>
+            </div>
+            <div class="form-group row">
+              <div class="col-5 mb-2">
+                <input
+                  class="form-control"
+                  id="nhap2So"
+                  placeholder="Nhập số có 2 chữ số"
+                />
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary" id="btnTongKySo">
+                  Tính tổng
+                </button>
+              </div>
+            </div>
+            <div class="alert alert-success mt-2">
+              Kết quả là =>
+              <span id="ketQua5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
